@@ -2,6 +2,7 @@
 const yargs = require("yargs");
 const chalk = require("chalk");
 
+// spawn is being used to communicate between the JS and Python backend
 const { spawn } = require('child_process')
 
 const { default: axios } = require("axios");
@@ -30,11 +31,12 @@ var options = yargs(process.argv.slice(2))
 
             const response = await axios.get(API_BASE_URL, {
                 params: {
-                    key: API_KEY,
-                    q: argv["name"],
-                    aqi: "no"
+                    key: API_KEY, // Interesting note, API's use different names for "API KEY" such as: "key", "APIKey", "access_key"! It is recommended when using an API to FIRST make a "mock" query if allowed from the website and view the headers!
+                    q: argv["name"], 
+                    aqi: "no" // fetches air quality
                 },
             })
+            // data = response.data.data would have been better!
             const data = response.data
             const weatherData = {
                 city_name: data.location.name,
