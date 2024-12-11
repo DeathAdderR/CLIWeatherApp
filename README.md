@@ -3,7 +3,7 @@
 This is a project built to practice using yargs and tying it together with python and SQL!
 
 [https://www.weatherapi.com/]
-^ You can go here and sign up to get a free API key!
+<-- You can go here and sign up to get a free API key!
 
 Once you have that, go into the bin/weatherApp.js file and copy the API key into the variable that says 'API_KEY'
 
