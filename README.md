@@ -29,7 +29,7 @@ yargs are a TON of fun to write!
 
 # FEEL FREE TO CONTRIBUTE!
 
-At the moment the project is bare bones. You can make the API call to the city of your choice. I have cherry picked what properties to fetch and store into the database.
+At the moment the project is bare bones. You can make the API call to the city of your choice. I have cherry picked which properties to fetch and store into the database.
 If you would like to add more properties go ahead. ***THERE ARE NO TEST CASES IN PLACE YET***
 
 ***If you decide to contribute and want to fetch more properties from the API request you MUST reflect the changes in the TABLE.PY, SCRIPT.PY file AND weatherApp.js file!***
