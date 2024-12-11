@@ -17,7 +17,6 @@ You can view the entries in the database like this while in the CLI:
 
 
 #### The scope of this project is to gain familiarity using API's, making API requests and storing data from the requests.
-#### The scope also includes applying concepts used in real world development. I intend on writing test cases that must be passed
 
 
 
